@@ -1,11 +1,3 @@
-* {
-   margin: 0;
-   padding: 0;
-   border: none;
-   text-decoration: none;
-   box-sizing: border-box;
-}
-
 html {
    --grey-dark: #707070;
    --grey-medium: #888888;
@@ -13,4 +5,5 @@ html {
    --white: #FFFFFF;
 
    font-size: 62.5%;
+   font-family: Helvetica, sans-serif;
 }
