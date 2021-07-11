@@ -7,3 +7,11 @@ html {
    font-size: 62.5%;
    font-family: Helvetica, sans-serif;
 }
+
+button, .button {
+   color: var(--grey-medium);
+	background: var(--white);
+	border: 1px solid var(--grey-dark);
+	border-radius: 4px;
+	cursor: pointer; 
+}
