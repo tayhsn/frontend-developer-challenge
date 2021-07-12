@@ -36,51 +36,11 @@
          <p>Fizemos uma lista especial de produtos apenas para você. Isso mesmo: nesta lista temos só produtos que você pode gostar. Seu amigo Ciclano lhe recomendou essa lista especial. Olha só:</p>
       </div>
 
-      <div id="products" name="products">
-
-         <div class="product">
-            <div class="image">
-               <img src="" alt="Foto do produto">
-            </div>
-
-            <div class="info">
-               <h2 class="name">Nome do produto</h2>
-
-               <p class="overlay description">Descrição do produto</p>
-
-               <h3>De: R$<span class="oldPrice"></span></h3>
-
-               <h1>Por: R$<span class="price"></span></h1>
-
-               <h3>ou <span class="count"></span>x de R$<span class="value"></span></h3>
-
-               <button>Comprar</button>
-            </div>
-         </div>
-
-         <div class="product">
-            <div class="image">
-               <img src="" alt="Foto do produto">
-            </div>
-
-            <div class="info">
-               <h2 class="name">Nome do produto</h2>
-
-               <p class="overlay description">Descrição do produto</p>
-
-               <h3>De: R$<span class="oldPrice"></span></h3>
-
-               <h1>Por: R$<span class="price"></span></h1>
-
-               <h3>ou <span class="count"></span>x de R$<span class="value"></span></h3>
-
-               <button>Comprar</button>
-            </div>
-         </div>
-
+      <div id="email-products">
+         <!-- CARD PUT HERE BY EMAIL.JS -->
       </div>
 
-      <button>Tem muito mais aqui. Vem ver!</button>
+      <button id="email-more-products">Tem muito mais aqui. Vem ver!</button>
 
    </main>
 
@@ -93,7 +53,8 @@
    </footer>
 
    <!-- import js -->
-   <script src="../scripts/script.js"></script>
+   <script type="module" src="../scripts/data.js"></script>
+   <script type="module" src="../scripts/email.js"></script>
 </body>
 
 </html>
