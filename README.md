@@ -8,21 +8,25 @@ O desafio consiste em desenvolver a landing page de um e-commerce, baseado no la
 
 Deve-se priorizar as boas práticas de programação, a documentação e a responsividade. 
 
-O layout do desafio, assim como a API e as instruções para o desenvolvimento estão disponíveis <a href="https://github.com/chaordic/frontend-developer-challenge">neste repositório.</a>
+Os requisitos do desafio, assim como a API e os Layouts, estão disponíveis <a href="https://github.com/chaordic/frontend-developer-challenge">neste repositório.</a>
 
-## Ferramentas :hammer:
+## Implementações :hammer:
 
-Este projeto foi desenvolvido utilizando:
-
-- Visual Studio Code
-- Versionamento com Git
-- JSDoc 3
+| Funcionalidades implementadas no projeto                     | Status |
+| ------------------------------------------------------------ | ------ |
+| Construção e responsividade (mobile/desktop) da página principal | ✅      |
+| Construção da página e-mail                                  | ✅      |
+| Design diagonal do Header e Footer  (layout)                 |        |
+| Validação dos inputs: NOME, EMAIL, CPF                       | ✅      |
+| Interatividade dos botões: ENVIAR, COMPRAR                   | ✅      |
+| Consumo dos dados da API e alimentação dinâmica na página    | ✅      |
+| Documentação                                                 | ✅      |
 
 ## Avaliação 📈
 
-Serão critérios de avaliação:
+Serão critérios avaliativos:
 
-- HTML semântico e CSS bem estruturado,
+- HTML semântico e CSS estruturado,
 - JavaScript documentado e funções reutilizáveis,
 - Boas práticas na escrita de códigos,
 - Commits semânticos,
