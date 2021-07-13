@@ -8,6 +8,7 @@ html {
    font-family: Helvetica, sans-serif;
 }
 
+/* BUTTONS */
 button, .button {
    color: var(--grey-medium);
 	background: var(--white);
@@ -16,7 +17,7 @@ button, .button {
 	cursor: pointer; 
 }
 
-/* CLASSE DE ERRO / INPUT */
+/* ERROR CLASS / INPUT */
 .error {
    border: 1px solid red;
 }
