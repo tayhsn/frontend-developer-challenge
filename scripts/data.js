@@ -1,6 +1,3 @@
-import { fillCardsIndex } from './index.js';
-import { fillCardsEmail } from './email.js';
-
 /**         
  * This script have the following responsabilities:
  * 1_ Consumer and Handling the API data 
@@ -17,11 +14,12 @@ import { fillCardsEmail } from './email.js';
 
 
 export async function getData(pages) {
-   
+   let products = []
+
    await fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${pages}`)
       .then(response => response.json())
       .then(data => {
-         const products = data.products.map(product => {
+         products = data.products.map(product => {
                const object = {
                   'id': product.id,
                   'name': product.name,
@@ -32,13 +30,13 @@ export async function getData(pages) {
                   'count': product.installments.count,
                   'value': product.installments.value
                }
+               
                return object;
-         })
-         
-         fillCardsIndex(products)
-         //fillCardsEmail(products)
+            })
       })
       .catch(e => console.log(e))
+
+      return products
 }
 
 
