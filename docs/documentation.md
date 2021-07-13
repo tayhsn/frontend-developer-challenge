@@ -32,14 +32,16 @@ A responsividade (presente apenas na index) foi desenvolvida a partir do conceit
 
 Aqui temos dois arquivos:
 
-- **Data** que concentra todas as funções referentes aos **dados** manipulados pela página, como consumo da API, tratamento, preenchimento nas páginas, etc.
-- **Script** que concentra as funções referentes a validação dos inputs e comportamento dos botões (enviar, comprar).
+- **Data** responsável apenas por consumir os dados da api.
+- **Validator** que concentra as funções de validação dos inputs e comportamento dos botões (enviar, comprar).
+- **index** responsável por preencher a página principal com os dados vindo de Data.
+- **email** responsável por preencher a página e-mail com os dados vindo de Data.
 
 
 
 #### That is it! :happy:
 
-##### Espero que esse documento seja útil no entendimento sobre as decisões tomada na arquitetura desse projeto.
+##### Espero que esse documento seja útil no entendimento sobre a arquitetura do projeto.
 
 
 
