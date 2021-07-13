@@ -1,9 +1,15 @@
 /**
- * This script have the following VALIDATION responsabilities:
- * Do the check of the inputs NAME, EMAIL, CPF by buttons' events
+ * This script have the following responsabilities:
+ * Do the check of the inputs NAME, EMAIL, CPF by buttons' event
  */
 
-/** BUTTON SEND in SECTION FORM ALGORITHM */
+/**
+ * @constant btnSend - takes the button SECTION FORM
+ * @event onclick get the inputs and validate
+ * @if the inputs are empty or not valid, add a class error to it
+ * @else remove the class error after the input is filled 
+ */
+
 const btnSend = document.querySelector('#send');
 btnSend.addEventListener('click', (e) => {
 	e.preventDefault();
@@ -45,7 +51,14 @@ btnSend.addEventListener('click', (e) => {
 
 
 
-/**  BUTTON SEND NOW in FORM SHARE */
+/**
+ * @constant btnSendNow - takes the button FORM SHARE
+ * @event onclick get the inputs and validate
+ * @if the inputs are empty or not valid, add a class error to it
+ * @else remove the class error after the input is filled 
+ * @open in new tab the email pages
+ */
+
 const btnSendNow = document.querySelector('#sendNow');
 btnSendNow.addEventListener('click', (e) => {
 	e.preventDefault();

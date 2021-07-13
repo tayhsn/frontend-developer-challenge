@@ -1,5 +1,6 @@
 /**
- * FILL OUT THE DATA IN INDEX
+ * This script have the following responsabilities:
+ * FILL IN THE DATA ON INDEX
  */
 
 import { getData } from './data.js';
@@ -7,13 +8,24 @@ import { getData } from './data.js';
 
 /**
  *
- * @constant card - div who receive the cards.
- * @param {object} products - object returned from the getData function.
+ * @function getData - function called from DATA.JS
+ * @then pass the response data as a params
+ * @function fillCardsIndex(params) - receives the data as parameter and dynamically creates each product card  
  */
 
- getData();
+getData().then(data => fillCardsIndex(data))
+
+
+
+/**
+ *
+ * @constant card - takes the div that receives the products container
+ * @function fillCardsIndex(params) - receives the data as parameter and dynamically creates each product card
+ * @param {object} data - object returned as response from API.
+ */
 
 const card = document.querySelector('#products');
+
 export function fillCardsIndex(data) {
 	card.innerHTML += data
 		.map((product) => {
@@ -39,26 +51,18 @@ export function fillCardsIndex(data) {
 }
 
 
-
 /**
- * 3_ MORE-PRODUCTS button events
- * @constant btnMoreProducts - button of more products
- * @function - invoke the getData function adding +1 to pages
+ * @let {number} pages - page control variable
+ * @constant btnMoreProducts - take the button that calls for more products * @event onclick increment the number of pages by 1
+ * @function getData(params) - call the function passing the page number as parameter
+ * @function fillCardsIndex - receives the data and creates the news products
  */
 
 let pages = 1;
-const btnMoreProducts = document.querySelector('#more-products');
+const btnMoreProducts = document.getElementById('more-products');
 btnMoreProducts.addEventListener('click', () => {
    pages++;
 
-	getData(pages)
+	getData(pages).then(data => fillCardsIndex(data))
 });
 
-/**  3_ BUTTON BUY in MAIN PRODUCTS */
-// var btnBuy = document.querySelectorAll('#buy');
-// btnBuy.forEach((button) => {
-// 	console.log(button);
-// 	button.addEventListener('click', () => {
-// 		alert('Obrigada pelo interesse nesse produto!');
-// 	});
-// });

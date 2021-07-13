@@ -1,42 +1,35 @@
-/**         
+/**
  * This script have the following responsabilities:
- * 1_ Consumer and Handling the API data 
- * 2_ Fill out the data inside the cards of index
- * 3_ MORE-PRODUCTS button event
+ * Request to API and return the response
  */
-
 
 /**
- * 1_ Consumer and Handling the API data
- * @let {number} pages - define the number of the page to get
- * @function getData - consume and handle the data.
+ * Request to API and return the response
+ * @function getData(params) - requests the data passing the pages as a parameter
+ * @type {array} products - container that receives the response and returns as a result of the function
  */
 
-
 export async function getData(pages) {
-   let products = []
+	let products = [];
 
-   await fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${pages}`)
-      .then(response => response.json())
-      .then(data => {
-         products = data.products.map(product => {
-               const object = {
-                  'id': product.id,
-                  'name': product.name,
-                  'image': product.image,
-                  'oldPrice': product.oldPrice,
-                  'price': product.price,
-                  'description': product.description,
-                  'count': product.installments.count,
-                  'value': product.installments.value
-               }
-               
-               return object;
-            })
-      })
-      .catch(e => console.log(e))
+	await fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${pages}`)
+		.then((response) => response.json())
+		.then((data) => {
+			products = data.products.map((product) => {
+				const object = {
+					id: product.id,
+					name: product.name,
+					image: product.image,
+					oldPrice: product.oldPrice,
+					price: product.price,
+					description: product.description,
+					count: product.installments.count,
+					value: product.installments.value,
+				};
+				return object;
+			});
+		})
+		.catch((e) => console.log(e));
 
-      return products
+	return products;
 }
-
-

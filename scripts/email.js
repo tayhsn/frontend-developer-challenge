@@ -1,23 +1,39 @@
+/**
+ * This script have the following responsabilities:
+ * FILL IN THE DATA ON EMAIL
+ */
+
 import { getData } from './data.js';
 
-/**
- * FILL OUT THE DATA IN INDEX
- */
-
-const data = getData();
-
 
 /**
- * 
- * @constant card - div who receive the cards.
- * @param {object} products - object returned from the getData function.
+ * @let {number} numItems - control variable that receives the size of the object
+ * @function getData - function called from DATA.JS
+ * @then - pass the response data as a params
+ * @function fillCardsIndex(params) - receives the data as parameter and dynamically creates each product card  
  */
+
+let numItems;
+
+getData().then(data => {
+   numItems = data.length
+   fillCardsEmail(data)
+})
+
+/**
+ * @let {number} items - control variable that defines the number of items that will be created on the page
+ * @constant card - takes the div that receives the products container
+ * @function fillCardsIndex(params) - receives the data as parameter and dynamically creates each product card
+ * @param {object} data - object returned as response from API.
+ */
+
+let items = 0;
 
 const card = document.querySelector('#email-products');
 
-export function fillCardsEmail(products) {
-	card.innerHTML += products
-                     .filter(product => product < 2)
+export function fillCardsEmail(data) {
+	card.innerHTML += data
+                     .slice(items, items + 2)
                      .map((product) => {
                         const card = `
                      <div class="product">
@@ -39,14 +55,26 @@ export function fillCardsEmail(products) {
                      }).join('');
 }
 
-/**
- * 3_ MORE-PRODUCTS button events
- * @constant btnMoreProducts - button of more products
- * @function - invoke the getData function adding +1 to pages
- */
-const btnMoreProducts = document.querySelector('#email-more-products');
-btnMoreProducts.addEventListener('click', () => {
-   pages++;
 
-	data.getData()
+
+/**
+ * @let {number} pages - page control variable
+ * @constant btnMoreProducts - take the button that calls for more products 
+ * @event onclick - increment the number of items by 2
+ * @if - the number of items are equals the object size, increment pages by 1 & set items = 0
+ * @function getData(params) - call the function passing the page number as parameter
+ * @function fillCardsIndex - receives the data and creates the news products
+ */
+
+let pages = 1
+const btnMoreProducts = document.getElementById("email-more-products");
+btnMoreProducts.addEventListener('click', () => {
+   items += 2;
+
+   if(items == numItems) {
+      pages++;
+      items = 0
+   }
+
+	getData(pages).then(data => fillCardsEmail(data))
 });
