@@ -4,17 +4,18 @@
 
 import { getData } from './data.js';
 
-const data = getData();
 
 /**
  *
  * @constant card - div who receive the cards.
  * @param {object} products - object returned from the getData function.
  */
-const card = document.querySelector('#products');
 
-export function fillCardsIndex(products) {
-	card.innerHTML += products
+ getData();
+
+const card = document.querySelector('#products');
+export function fillCardsIndex(data) {
+	card.innerHTML += data
 		.map((product) => {
 			const card = `
        <div class="product">
@@ -37,24 +38,27 @@ export function fillCardsIndex(products) {
 		.join('');
 }
 
+
+
 /**
  * 3_ MORE-PRODUCTS button events
  * @constant btnMoreProducts - button of more products
  * @function - invoke the getData function adding +1 to pages
  */
+
+let pages = 1;
 const btnMoreProducts = document.querySelector('#more-products');
-console.log(btnMoreProducts)
 btnMoreProducts.addEventListener('click', () => {
    pages++;
 
-	data.getData()
+	getData(pages)
 });
 
 /**  3_ BUTTON BUY in MAIN PRODUCTS */
-var btnBuy = document.querySelectorAll('#buy');
-btnBuy.forEach((button) => {
-	console.log(button);
-	button.addEventListener('click', () => {
-		alert('Obrigada pelo interesse nesse produto!');
-	});
-});
+// var btnBuy = document.querySelectorAll('#buy');
+// btnBuy.forEach((button) => {
+// 	console.log(button);
+// 	button.addEventListener('click', () => {
+// 		alert('Obrigada pelo interesse nesse produto!');
+// 	});
+// });

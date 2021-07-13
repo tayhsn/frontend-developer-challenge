@@ -16,14 +16,13 @@ import { fillCardsEmail } from './email.js';
  */
 
 
-export async function getData() {
-   let pages = 1
+export async function getData(pages) {
    
    await fetch(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${pages}`)
       .then(response => response.json())
       .then(data => {
-         let products = data.products.map(product => {
-               let object = {
+         const products = data.products.map(product => {
+               const object = {
                   'id': product.id,
                   'name': product.name,
                   'image': product.image,
@@ -35,9 +34,9 @@ export async function getData() {
                }
                return object;
          })
-            
+         
          fillCardsIndex(products)
-         fillCardsEmail(products)
+         //fillCardsEmail(products)
       })
       .catch(e => console.log(e))
 }
