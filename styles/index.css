@@ -144,11 +144,15 @@ section form div span #rd-fem {
 	margin-left: 5rem;
 }
 
-section form > button {
+section form button {
 	height: 3.9rem;
 
 	margin: 1rem 1.9rem 9rem;
 	font-size: 1.6rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -299,16 +303,13 @@ main > button { /*BUTTON MAIS + PRODUTOS */
 	margin: .5rem 0;
 }
 
-#share a {
+#share button {
 	width: 26rem;
 	height: 3.9rem;
 	font-size: 1.6rem;
 
 	margin: 4.2rem 8rem;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 /* FOOTER */
