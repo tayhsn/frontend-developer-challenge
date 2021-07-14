@@ -33,15 +33,15 @@ A responsividade (presente apenas na index) foi desenvolvida a partir do conceit
 Aqui temos dois arquivos:
 
 - **Data** responsável apenas por consumir os dados da api.
-- **Validator** que concentra as funções de validação dos inputs e comportamento dos botões (enviar, comprar).
-- **index** responsável por preencher a página principal com os dados vindo de Data.
-- **email** responsável por preencher a página e-mail com os dados vindo de Data.
+- **Validator** que concentra as funções de validação dos inputs e eventos dos botões dos formulários.
+- **Index** responsável por preencher a página **principal** com os dados vindo de Data.
+- **Email** responsável por preencher a página **e-mail** com os dados vindo de Data.
 
 
 
-#### That is it! :happy:
+#### That is it! ☺
 
-##### Espero que esse documento seja útil no entendimento sobre a arquitetura do projeto.
+Espero que esse documento seja útil no entendimento sobre a arquitetura do projeto.
 
 
 
