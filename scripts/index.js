@@ -41,7 +41,7 @@ export function fillCardsIndex(data) {
                 <h3>De: R$${product.oldPrice}</h3>
                 <h1>Por: R$${product.price}</h1>
                 <h3>ou ${product.count}x de R$${product.value}</h3>
-                <button id="buy">Comprar</button>
+                <button>Comprar</button>
              </div>
        </div>
        `;

@@ -1,6 +1,6 @@
 /**
  * This script have the following responsabilities:
- * Do the check of the inputs NAME, EMAIL, CPF by buttons' event
+ * Check the inputs NAME, EMAIL, CPF by buttons' event
  */
 
 /**

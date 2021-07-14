@@ -29,7 +29,7 @@ header {
 
 header .headline {
 	color: var(--white);
-	padding: 1rem;
+	padding: 1.5rem;
 	margin: 0 auto;
 }
 
@@ -345,7 +345,7 @@ footer p a {
 	}
 }
 
-/* RESPONSIVIDADE - DESKTOP */
+/*  DESKTOP */
 @media only screen and (min-width: 918px) {
 	body {
 		width: 150rem;
@@ -355,9 +355,10 @@ footer p a {
 	header .headline {
 		text-align: center;
 	}
-
+	
 	header .headline p {
 		width: 100%;
+		margin: 0 auto;
 	}
 
 	header .buttons {
