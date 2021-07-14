@@ -89,5 +89,5 @@ btnSendNow.addEventListener('click', (e) => {
 
 	alert('Email enviado com sucesso. Muito obrigado!');
 
-	window.open('../views/email.html', '_blank');
+	window.open('email.html', '_blank');
 });
