@@ -1,10 +1,8 @@
-# Desafio Frontend Developer | Linx Impulse :rocket:
+<h1 align="center">Frontend Developer Challenge </h1>
 
+<h3 align="center">Linx Impulse</h3>
 
-
-## Live Preview 📲​
-
-O Live Preview do GitHub Pages pode ser acesso aqui: https://tayhsn.github.io/frontend-developer-challenge/
+<h3 align="center"><a href="https://tayhsn.github.io/frontend-developer-challenge/">Github.io</a> | <a href="https://frontend-developer-challenge.vercel.app/">Vercel</a>  📲</h3>
 
 
 
@@ -16,13 +14,15 @@ Deve-se priorizar as boas práticas de programação, a documentação e a respo
 
 Os requisitos do desafio, assim como a API e os Layouts, estão disponíveis <a href="https://github.com/chaordic/frontend-developer-challenge">neste repositório.</a>
 
+
+
 ## Implementações :hammer:
 
 | Funcionalidades implementadas no projeto                     | Status |
 | ------------------------------------------------------------ | ------ |
 | Construção e responsividade (mobile/desktop) da página principal | ✅      |
 | Construção da página e-mail                                  | ✅      |
-| Design diagonal do Header e Footer  (layout)                 |        |
+| Design diagonal do Header e Footer  (layout)                 | 👷‍♀️     |
 | Validação dos inputs: NOME, EMAIL, CPF                       | ✅      |
 | Comportamento dos botões: ENVIAR e MAIS PRODUTOS             | ✅      |
 | Consumo dos dados da API e alimentação dinâmica das páginas  | ✅      |
@@ -36,7 +36,9 @@ Os requisitos do desafio, assim como a API e os Layouts, estão disponíveis <a 
 >
 > ✔ Comportamento dos botões MAIS PRODUTOS de acordo com o esperado, trazendo mais produtos para página em suas respectivas quantidades.
 >
-> ❌ Até o momento, não consegui reproduzir o design diagonal do background do header e footer. 🚧👷‍♀️
+> 🚧👷‍♀️ Estou trabalhando no design diagonal do background do header e footer. 
+
+
 
 ## Avaliação 📈
 
@@ -48,6 +50,8 @@ Serão critérios avaliativos:
 - Commits semânticos,
 - Organização do projeto,
 - Responsividade sem frameworks.
+
+
 
 ## Instruções 🗃️
 
