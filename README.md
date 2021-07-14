@@ -22,7 +22,7 @@ Os requisitos do desafio, assim como a API e os Layouts, estão disponíveis <a 
 | ------------------------------------------------------------ | ------ |
 | Construção e responsividade (mobile/desktop) da página principal | ✅      |
 | Construção da página e-mail                                  | ✅      |
-| Design diagonal do Header e Footer  (layout)                 | 👷‍♀️     |
+| Design diagonal do Header e Footer  (layout)                 | ✅      |
 | Validação dos inputs: NOME, EMAIL, CPF                       | ✅      |
 | Comportamento dos botões: ENVIAR e MAIS PRODUTOS             | ✅      |
 | Consumo dos dados da API e alimentação dinâmica das páginas  | ✅      |
@@ -36,7 +36,7 @@ Os requisitos do desafio, assim como a API e os Layouts, estão disponíveis <a 
 >
 > ✔ Comportamento dos botões MAIS PRODUTOS de acordo com o esperado, trazendo mais produtos para página em suas respectivas quantidades.
 >
-> 🚧👷‍♀️ Estou trabalhando no design diagonal do background do header e footer. 
+> ✔ Design diagonal no header e footer da página principal. (Não está totalmente idêntico a versão mobile pois não consegui deixar os botões sobrepostos como no layout) 
 
 
 
